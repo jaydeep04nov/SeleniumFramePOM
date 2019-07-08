@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+  <test thread-count="5" verbose="0" name="Test(failed)">
+    <parameter name="seconds" value="5"/>
+    <parameter name="password" value="password1"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="http://www.newtours.demoaut.com/mercurywelcome.php"/>
+    <parameter name="username" value="jaydeep1"/>
+    <classes>
+      <class name="com.Module.Launch">
+        <methods>
+          <include name="executeLaunch"/>
+        </methods>
+      </class> <!-- com.Module.Launch -->
+      <class name="com.Module.Login">
+        <methods>
+          <include name="executeLogin" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.Module.Login -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
